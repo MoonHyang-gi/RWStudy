@@ -1,4 +1,4 @@
-/*var resetBtn = document.getElementById("resetBtn");
+var resetBtn = document.getElementById("resetBtn");
 var first = document.getElementById("first");
 var boxColor = document.getElementById("boxColor");
 
@@ -8,15 +8,17 @@ resetBtn.addEventListener('click', function(){
     if(this.onclick)
     {
         count =+ 1;
-    }
-    if(count == 0)
+
+        if(count == 0)
     {
         first.textContent = "block";
         boxColor.textContent = "none";
     }
-    if(count == 1)
+    else if(count == 1)
     {
         first.textContent = "none";
         boxColor.textContent = "block";
     }
-})*/
+    }
+    
+})
